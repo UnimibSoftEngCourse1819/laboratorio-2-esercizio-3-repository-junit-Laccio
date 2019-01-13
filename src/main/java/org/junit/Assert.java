@@ -898,7 +898,50 @@ public class Assert {
     public static void assertEquals(Object[] expecteds, Object[] actuals) {
         assertArrayEquals(expecteds, actuals);
     }
+    public static void assertGreaterThan(int o1, int o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
 
+    public static void assertGreaterThan(float o1, float o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(double o1, double o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(long o1, long o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(short o1, short o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(char o1, char o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(byte o1, byte o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+    public static <T> void assertGreaterThan(T o1, T o2, java.util.Comparator<T> comparator) {
+        comparator.compare(o1, o2);
+    }
     /**
      * Asserts that <code>actual</code> satisfies the condition specified by
      * <code>matcher</code>. If not, an {@link AssertionError} is thrown with
