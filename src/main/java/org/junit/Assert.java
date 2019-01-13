@@ -212,7 +212,47 @@ public class Assert {
     public static void assertNotEquals(long unexpected, long actual) {
         assertNotEquals(null, unexpected, actual);
     }
+    public static void assertGreaterThan(int o1, int o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
 
+    public static void assertGreaterThan(float o1, float o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(double o1, double o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(long o1, long o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(short o1, short o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(char o1, char o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
+
+    public static void assertGreaterThan(byte o1, byte o2) {
+        if (o1 <= o2) {
+            fail("Errore AGT");
+        }
+    }
     /**
      * Asserts that two doubles are <b>not</b> equal to within a positive delta.
      * If they are, an {@link AssertionError} is thrown with the given
